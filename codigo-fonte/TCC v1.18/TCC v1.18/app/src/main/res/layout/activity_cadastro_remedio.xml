@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tela.cadastro.CadastroRemedioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_questionnaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/medicine_name" />
+
+            <EditText
+                android:id="@+id/edit_text_medicine_name"
+                style="@style/EditText"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/expiration_date" />
+
+            <EditText
+                android:id="@+id/edit_text_expiration_date"
+                style="@style/EditText"
+                android:focusable="false" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/initial_date" />
+
+            <EditText
+                android:id="@+id/edit_text_initial_date"
+                style="@style/EditText"
+                android:focusable="false" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/medicine_type" />
+
+            <Spinner
+                android:id="@+id/spinner_text_how_to_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/edit_text_margin_end"
+                android:layout_marginRight="@dimen/edit_text_margin_end" />
+
+            <TextView
+                android:id="@+id/text_view_medicine_capsules"
+                style="@style/TextView"
+                android:text="@string/tablets_number"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_text_medicine_capsules"
+                style="@style/EditText"
+                android:inputType="numberSigned"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_view_medicine_mililitros"
+                style="@style/TextView"
+                android:text="@string/qnt_mililitros_recipiente"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_text_medicine_mililitros"
+                style="@style/EditText"
+                android:inputType="numberSigned"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_save_medicine"
+            style="@style/Button"
+            android:layout_below="@+id/linear_layout_questionnaire"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+    </RelativeLayout>
+</ScrollView>

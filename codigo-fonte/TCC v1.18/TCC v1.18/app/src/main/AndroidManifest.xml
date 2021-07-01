@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projeto_v1">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".realm_config.RealmConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".tela.ForgotPasswordActivity"
+            android:parentActivityName=".tela.LoginActivity">
+        </activity>
+        <activity
+            android:name=".tela.cadastro.VerificarEmailActivity"
+            android:parentActivityName=".tela.cadastro.CadastroUsuarioActivity"/>
+        <activity
+            android:name=".tela.cadastro.detail.ChangePasswordActivity"
+            android:parentActivityName=".tela.cadastro.detail.UserDetailActivity" />
+        <activity
+            android:name=".list.ListAlarmesActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".tela.cadastro.detail.AssociadoDetailActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".list.ListAssociadoActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".tela.cadastro.CadastroAlarmeActivity"
+            android:parentActivityName=".list.ListAlarmesActivity" />
+        <activity
+            android:name=".tela.cadastro.CadastroAssociadoActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".tela.cadastro.detail.UserDetailActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity android:name=".tela.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".tela.cadastro.CadastroRemedioActivity"
+            android:parentActivityName=".tela.inicial.TelaInicialActivity" />
+        <activity
+            android:name=".tela.cadastro.CadastroUsuarioActivity"
+            android:parentActivityName=".tela.LoginActivity" />
+
+        <receiver
+            android:name=".receiver.AlarmeReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".receiver.PerguntaReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".receiver.AlarmeClockReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".receiver.EmailReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".receiver.ValidadeReceiver"
+            android:process=":remote" />
+    </application>
+
+</manifest>

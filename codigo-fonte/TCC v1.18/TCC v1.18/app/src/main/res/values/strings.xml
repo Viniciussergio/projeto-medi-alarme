@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">MediAlarme</string>
+    <!-- Strings used for general situations -->
+    <string name="update">Atualizar</string>
+    <string name="delete">Deletar</string>
+    <string name="save">Salvar</string>
+    <!-- Strings used for user data -->
+    <string name="username">Apelido</string>
+    <string name="cellphone_number">Celular</string>
+    <string name="confirm_password">Confirme a senha</string>
+    <string name="confirm_email">Confirme o email</string>
+    <string name="email">Email</string>
+    <string name="first_name">Primeiro Nome</string>
+    <string name="password">Senha</string>
+    <string name="last_name">Sobrenome</string>
+    <!-- Strings used for login -->
+    <string name="action_sign_in">Cadastrar</string>
+    <string name="prompt_email">Email</string>
+    <string name="action_login_in">Entrar</string>
+    <string name="prompt_password">Senha</string>
+    <!-- Strings used in fragments -->
+    <string name="add_associated">Adicionar Associado</string>
+    <string name="create_medicine">Criar medicamento</string>
+    <string name="associated">Seus associados(0)</string>
+    <string name="empty_historic_card_views">Você ainda não possui um histórico</string>
+    <string name="empty_medicine_card_views">Você ainda não cadastrou um medicamento</string>
+    <!-- String used in medicine card view -->
+    <string name="add_alarm_button_cardview">Alarmes</string>
+    <string name="description_cardview">Descrição do medicamento</string>
+    <!-- Strings used for dialogs -->
+    <string name="dialog_cancel_action">Cancelar</string>
+    <string name="dialog_confirm_action">Sim</string>
+    <string name="dialog_message">Tem certeza que deseja prosseguir?\n
+        (Lembre-se de excluir os alarmes no Relógio de seu celular)</string>
+    <!-- Strings used for toggle_buttons -->
+    <string name="toggle_sunday">D</string>
+    <string name="toggle_thursday">Q</string>
+    <string name="toggle_wednesday">Q</string>
+    <string name="toggle_friday">S</string>
+    <string name="toggle_monday">S</string>
+    <string name="toggle_saturday">S</string>
+    <string name="toggle_tuesday">T</string>
+    <!-- Strings used for medicine data -->
+    <string name="comprimidos_por_dose">Comprimidos por dose</string>
+    <string name="expiration_date">Data de validade</string>
+    <string name="final_date">Data do fim do tratamento</string>
+    <string name="initial_date">Data do início do tratamento</string>
+    <string name="descricao_modo_uso">Descreva brevemente o modo de uso do remédio</string>
+    <string name="how_to_use">Forma de uso</string>
+    <string name="frequency_of_use">Frequência de uso da medicação</string>
+    <string name="initial_date_time">Hora inicial do tratamento</string>
+    <string name="medicine_name"> Nome do medicamento</string>
+    <string name="how_many_shall_use">Quantidade de comprimidos a serem utilizados</string>
+    <string name="qnt_gotas_dose">Quantidade de gotas por Dose</string>
+    <string name="qnt_mililitros_dose">Quantidade de Mililitros por dose</string>
+    <string name="tablets_number">Quantos comprimidos vem no recipiente?</string>
+    <string name="qnt_mililitros_recipiente">Quantos mililitros vem no recipiente?</string>
+    <string name="medicine_type">Tipo do Remédio</string>
+    <!-- String used for alarm data -->
+    <string name="hour">Hora</string>
+    <string name="selected_date">Data selecionada</string>
+    <!-- String used for update user activity -->
+    <string name="add_alarm">Adicionar Alarme</string>
+    <string name="change_your_password">Alterar sua Senha</string>
+    <string name="user_info">Informações do Usuário</string>
+    <string name="new_password">Nova Senha</string>
+    <string name="actual_password">Senha Atual</string>
+    <string name="change_password">Trocar Senha</string>
+    <!-- String used for alarm card view -->
+    <string name="days_of_week">Dias da Semana</string>
+    <string name="alarm_time">Horário do Alarme</string>
+    <string name="associated_name">Nome do Associado</string>
+    <string name="alarm_type">Tipo Alarme</string>
+    <!-- String used for history card view -->
+    <string name="history_state">Status Historico</string>
+    <!-- Strings used for bottom navigation -->
+    <string name="history">Histórico</string>
+    <string name="initial">Inicial</string>
+    <string name="profile">Perfil</string>
+    <!-- Strings used for account manipulation -->
+    <string name="change_user_data">Alterar cadastro</string>
+    <string name="delete_account">Excluir Conta</string>
+    <string name="logout">Logout</string>
+</resources>

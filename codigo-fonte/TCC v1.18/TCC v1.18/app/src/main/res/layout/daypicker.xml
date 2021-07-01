@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ToggleButton
+        android:id="@+id/toggle_button_sunday"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textOff="@string/toggle_sunday"
+        android:textOn="@string/toggle_sunday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_monday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_monday"
+        android:textOn="@string/toggle_monday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_tuesday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_tuesday"
+        android:textOn="@string/toggle_tuesday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_wednesday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_wednesday"
+        android:textOn="@string/toggle_wednesday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_thursday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_thursday"
+        android:textOn="@string/toggle_thursday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_friday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_friday"
+        android:textOn="@string/toggle_friday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_saturday"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="@string/toggle_saturday"
+        android:textOn="@string/toggle_saturday"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FatherLayout"
+    android:padding="10dp"
+    tools:context=".tela.cadastro.CadastroAssociadoActivity">
+
+    <LinearLayout
+        android:id="@+id/associado_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin">
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/first_name" />
+
+        <EditText
+            android:id="@+id/edit_text_associado_first_name"
+            style="@style/EditText"
+            android:inputType="textPersonName" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/last_name" />
+
+        <EditText
+            android:id="@+id/edit_text_associado_last_name"
+            style="@style/EditText"
+            android:inputType="textPersonName" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/edit_text_associado_username"
+            style="@style/EditText"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/edit_text_associado_email"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"/>
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/confirm_email" />
+
+        <EditText
+            android:id="@+id/edit_text_associado_confirm_email"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save_associado"
+        android:layout_below="@+id/associado_linear_layout"
+        style="@style/Button"
+        android:text="@string/save" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tela.cadastro.detail.UserDetailActivity"
+    android:padding="15dp">
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/first_name" />
+
+    <EditText
+        android:id="@+id/edit_update_first_name"
+        style="@style/EditText"
+        android:inputType="textPersonName" />
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/last_name" />
+
+    <EditText
+        android:id="@+id/edit_update_last_name"
+        style="@style/EditText"
+        android:inputType="textPersonName" />
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/edit_update_username"
+        style="@style/EditText"
+        android:inputType="text" />
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/cellphone_number" />
+
+    <EditText
+        android:id="@+id/edit_update_telefone"
+        style="@style/EditText"
+        android:inputType="text"
+        android:maxLength="19"/>
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/edit_update_email"
+        style="@style/EditText"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/edit_text_margin_end"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/button_update_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorLight"
+        android:padding="@dimen/button_padding"
+        android:layout_marginBottom="10dp"
+        android:text="@string/update"/>
+
+    <Button
+        android:id="@+id/button_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorLight"
+        android:padding="@dimen/button_padding"
+        android:layout_marginBottom="10dp"
+        android:text="@string/change_your_password"/>
+
+</LinearLayout>

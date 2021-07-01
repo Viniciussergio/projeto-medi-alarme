@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FatherLayout"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".tela.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/edit_text_username"
+        style="@style/EditText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_below="@id/edit_text_username">
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            style="@style/EditText"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="156dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text_view_forgot_password"
+        android:layout_below="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "10dp"
+        android:layout_marginStart="35dp"
+        android:text="Esqueci minha senha"
+        android:textSize="16dp"
+        android:textColor="@color/colorBackground"/>
+
+    <LinearLayout
+        style="@style/ChildLayout"
+        android:layout_below="@id/text_input_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="@string/action_login_in" />
+
+        <Button
+            android:id="@+id/button_sign"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="@string/action_sign_in" />
+    </LinearLayout>
+</RelativeLayout>

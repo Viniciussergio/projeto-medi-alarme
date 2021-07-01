@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FatherLayout"
+    android:padding="10dp"
+    tools:context=".tela.cadastro.CadastroAlarmeActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_dose"
+        style="@style/ChildLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_comprimidos_dose"
+            style="@style/TextView"
+            android:text="@string/comprimidos_por_dose"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_text_comprimidos_dose"
+            style="@style/EditText"
+            android:inputType="numberSigned"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_view_gotas_dose"
+            style="@style/TextView"
+            android:text="@string/qnt_gotas_dose"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_text_gotas_dose"
+            style="@style/EditText"
+            android:inputType="numberSigned"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_view_modo_uso"
+            style="@style/TextView"
+            android:text="@string/descricao_modo_uso"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_text_modo_uso"
+            style="@style/EditText"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear_dose"
+        android:id="@+id/linear_layout_arrange"
+        style="@style/ChildLayout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text_alarm_time"
+            style="@style/EditText"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint="@string/hour"
+            android:gravity="center"
+            android:textAlignment="gravity" />
+
+        <Spinner
+            android:id="@+id/alarms_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/day_picker"
+        layout="@layout/daypicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_arrange"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_text_selected_date"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/day_picker"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:hint="@string/selected_date"
+        android:gravity="center"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/button_save_alarm"
+        style="@style/Button"
+        android:layout_below="@id/edit_text_selected_date"
+        android:text="@string/save" />
+
+</RelativeLayout>

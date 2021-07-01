@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarms_array">
+        <item>Diário</item>
+        <item>Personalizado</item>
+        <item>Dia específico</item>
+    </string-array>
+    <string-array name="opcoes_uso">
+        <item>Comprimido</item>
+        <item>Gotas</item>
+        <item>Outro</item>
+    </string-array>
+</resources>

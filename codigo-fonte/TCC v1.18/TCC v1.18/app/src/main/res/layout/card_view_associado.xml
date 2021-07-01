@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="3sp"
+    app:cardElevation="3sp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        style="@style/ChildLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/ChildLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_associado_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/associated_name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_associado_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="10sp"
+                android:text="@string/username"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/text_view_associado_description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="10sp"
+                android:text="@string/email"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/button_update_associado"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/update"
+                android:textColor="@color/colorPrimaryText" />
+
+            <Button
+                android:id="@+id/button_delete_associado"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_update_associado"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimaryText" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
